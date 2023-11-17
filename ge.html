@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const nationalParksArray = [
+        {
+          LocationID: "ABLI",
+          LocationName: "Abraham Lincoln Birthplace National Historical Park",
+          // ... other properties
+        },
+      ];
+
+      const parkTypesArray = ["National Park", "Historic"];
+
+      // Find the first park in nationalParksArray with a type that is in parkTypesArray
+      const nationalPark = nationalParksArray.find((park) =>
+        parkTypesArray.includes(park.LocationName)
+      );
+
+      // nationalPark will contain the park object if found, or undefined if not found
+      console.log(nationalPark);
+    </script>
+  </body>
+</html>

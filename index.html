@@ -3,18 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Pico.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+    <title>Outdoor Adventure</title>
   </head>
   <body>
-    <header>
-      <h1>Outdoor Adventure</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="mountains.html">National Parks</a></li>
-          <li><a href="parks.html">Mountains</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!--Header NavBar-->
+    <div>
+      <header>
+        <nav class="container-fluid">
+          <ul>
+            <li><strong>Outdoor Adventure</strong></li>
+          </ul>
+          <ul>
+            <li><a href="#" id="index">Home</a></li>
+            <li><a href="#" id="mountains">Mountains</a></li>
+            <li><a href="#" id="national-park">National parks</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!--Body description-->
+    <div>
+      <main>
+        <figure>
+          <img
+            src="images/Lafayette-StoryImage_2.jpg"
+            alt="Outdoor Adventure Image" />
+        </figure>
+        <section>
+          <p style="columns: 2 auto">
+            Welcome to Nature Discovery! Here, you can check out all the cool
+            things Earth has to offer. Get into the beauty of our handpicked
+            parks, each one perfect for chilling out or going on an adventure.
+            Use our Park Finder to discover the best green spots for your next
+            trip. Want to know about big mountains? Check out our Mountain Facts
+            page. It tells you about awesome peaks and the wild places around
+            them. Whether you're just starting out or you've done some
+            exploring, find the info you need for new adventures. At Nature
+            Discovery, we think every step and every place is a story. Come,
+            let's celebrate the fun of the great outdoors. Your journey begins
+            here!
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <!-- Image Container -->
+    <div class="image-container">
+      <div class="mountains" id="mountains-container">
+        <img src="images/CDome-StoryImage.jpg" alt="" />
+        <h2>Mountains</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
+          suscipit.
+        </p>
+      </div>
+
+      <div class="national-park" id="nationalPark-container">
+        <img src="images/Cannon-StoryImg_2.jpg" alt="" />
+        <h2>National Park</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
+          suscipit.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; Outdoor Adventure 2023</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
   </body>
 </html>

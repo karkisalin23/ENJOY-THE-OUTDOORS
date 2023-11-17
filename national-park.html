@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+    <title>Outdoor Adventure</title>
+  </head>
+  <body>
+    <div>
+      <nav class="container-fluid">
+        <ul>
+          <li><strong>National Park</strong></li>
+        </ul>
+        <ul>
+          <li><a href="#" id="index">Home</a></li>
+          <li><a href="#" id="mountains">Mountains</a></li>
+          <li><a href="#" id="national-park">National parks</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div>
+      <main>
+        <h3>Activities</h3>
+        <form>
+          <div class="radio-buttons">
+            <input type="radio" id="byLocation" name="filterType" />
+            <label for="byLocation">By Location</label>
+
+            <input type="radio" id="byType" name="filterType" />
+            <label for="byType">By Type</label>
+          </div>
+
+          <div id="optionStorage">
+            <label for="locationList"></label>
+            <select id="locationList">
+              <option value="">Select...</option>
+            </select>
+
+            <label for="parkTypeList"></label>
+            <select id="parkTypeList">
+              <option value="">Select...</option>
+            </select>
+          </div>
+        </form>
+      </main>
+
+      <!-- Add this div where you want the park information table to appear -->
+      <div id="parkTable"></div>
+      <div id="parkList"></div>
+    </div>
+
+    <footer>
+      <p>&copy; Outdoor Adventure 2023</p>
+    </footer>
+
+    <script src="scripts/nationalParkData.js"></script>
+    <script src="scripts/locationData.js"></script>
+    <script src="scripts/parkTypeData.js"></script>
+    <script src="scripts/parks.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

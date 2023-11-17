@@ -3,18 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Pico.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+
+    <title>Outdoor Adventure</title>
   </head>
   <body>
-    <header>
-      <h1>Outdoor Adventure</h1>
-      <nav>
+    <div>
+      <nav class="container-fluid">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="mountains.html">National Parks</a></li>
-          <li><a href="parks.html">Mountains</a></li>
+          <li><strong>Mountains</strong></li>
+        </ul>
+        <ul>
+          <li><a href="#" id="index">Home</a></li>
+          <li><a href="#" id="mountains">Mountains</a></li>
+          <li><a href="#" id="national-park">National parks</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
+
+    <div>
+      <main>
+        <h3>Mountains</h3>
+        <form>
+          <label for="mountainList">Mountains</label>
+          <select id="mountainList">
+            <option value="">Select...</option>
+          </select>
+        </form>
+      </main>
+    </div>
+    <div id="mountainDetails"></div>
+
+    <footer>
+      <p>&copy; Outdoor Adventure 2023</p>
+    </footer>
+
+    <script src="scripts/mountainData.js"></script>
+    <script src="scripts/mountains.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

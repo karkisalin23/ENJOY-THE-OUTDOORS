@@ -1,0 +1,160 @@
+/* Import Pico.css */
+@import url("https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css");
+
+/* Custom styles for Outdoor Adventure */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #11191f;
+}
+
+.container-fluid {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-fluid ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.container-fluid ul li {
+  margin-right: 10px;
+}
+
+.container-fluid ul li strong {
+  font-size: 1.5rem;
+}
+
+.container-fluid ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.container-fluid ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+figure {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 500px;
+}
+
+section p {
+  font-size: 15px;
+  columns: 3 auto;
+}
+
+/*main {
+  margin: 20px;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure img {
+  align-items: center;
+  width: 75%;
+  height: 300px;
+  border-radius: 8px;
+}*/
+div p {
+  font-size: 15px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container div {
+  width: 250px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 2px;
+  border: 3px #ffffff solid;
+  cursor: pointer;
+}
+
+.image-container h2 {
+  margin-bottom: 5px;
+}
+
+.image-container p {
+  font-size: 14px;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.mountains {
+  margin-right: 50px;
+}
+
+/*National Park Page*/
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.radio-buttons{
+  display: flex;
+}
+
+#mountainDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  opacity: 1;
+  transition: margin-top 0.15s ease, opacity 0.15 ease;
+}
+
+#mountainDetails img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transform: scale(1);
+  transition: transform 0.15s ease;
+}
